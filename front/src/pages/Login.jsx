@@ -14,7 +14,7 @@ export default function Login() {
     try {
       // 로그인 API 요청 수정
       const response = await axios.post(
-        `${API_URL}/token`, 
+        `${API_URL}/user/Login`, 
         `username=${email}&password=${pw}`,
         {
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
