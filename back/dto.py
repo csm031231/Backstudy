@@ -11,10 +11,6 @@ class UpdateUserDTO(BaseModel):
     email: Optional[str] = None
     password: Optional[str] = None
 
-class UserResponseDTO(BaseModel):
-    username: str
-    email: str
-
 class LoginDTO(BaseModel):
     username: str
     password: str
