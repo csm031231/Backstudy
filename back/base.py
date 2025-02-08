@@ -3,7 +3,7 @@ from sqlalchemy import create_engine  # 데이터베이스 엔진 생성
 from sqlalchemy.ext.declarative import declarative_base  # ORM 모델 클래스 정의를 위한 기본 클래스
 from sqlalchemy.orm import sessionmaker  # 데이터베이스 세션 생성
 
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:1231@host.docker.internal:5432/abc"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:1231@localhost:5432/abc"
 
 # 데이터베이스 엔진 생성
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
