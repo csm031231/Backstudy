@@ -14,7 +14,7 @@ export default function MyPage() {
     try {
       const updatedData = { username, password, email };
       const response = await axios.put(
-        `${API_URL}/${username}/change`, 
+        `${API_URL}/user/${username}/change`,  // API 경로 수정
         updatedData
       );
       console.log("정보 수정 성공:", response.data);

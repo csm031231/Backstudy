@@ -12,7 +12,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${API_URL}/signup`,  // 회원가입 URL 수정
+        `${API_URL}/user/`,  // API 경로 수정
         { username, password, email }
       );
       console.log("회원가입 성공:", response.data);

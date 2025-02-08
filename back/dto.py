@@ -11,6 +11,3 @@ class UpdateUserDTO(BaseModel):
     email: Optional[str] = None
     password: Optional[str] = None
 
-class LoginDTO(BaseModel):
-    username: str
-    password: str
