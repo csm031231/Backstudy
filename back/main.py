@@ -2,8 +2,12 @@
 from fastapi import FastAPI
 from user_controller import router as user_controller
 from fastapi.middleware.cors import CORSMiddleware
-
+from base import Base
+from base import engine 
 app = FastAPI()
+
+# 애플리케이션 시작 시 데이터베이스 테이블 생성
+Base.metadata.create_all(bind=engine)
 
 app.add_middleware(
     CORSMiddleware,
