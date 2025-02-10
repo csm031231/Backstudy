@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from 'axios';
 
-const API_URL = 'http://3.36.76.75:8000';  // API URL 수정
+const API_URL = 'http://3.39.233.182:8000';  // API URL 수정
 
 export default function Signup() {
   const [username, setUsername] = useState("");
